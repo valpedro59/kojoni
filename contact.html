@@ -16,8 +16,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <!-- <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
@@ -28,13 +28,13 @@
 </head>
 <body>
   <!-- ======= Header ======= -->
-  <section id="topbar" class="topbar flex items-center">
-    <div class="w-full px-40  flex justify-center md:justify-between">
-      <div class="contact-info flex items-center">
-        <i class="bi bi-envelope flex items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
-        <i class="bi bi-phone flex items-center ms-4"><span>607 043 125</span></i>
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-envelope d-flex align-items-center"><a href="mailto:contact@example.com">contact@example.com</a></i>
+        <i class="bi bi-phone d-flex align-items-center ms-4"><span>607 043 125</span></i>
       </div>
-      <div class="social-links d-none d-mflex align-items-center">
+      <div class="social-links d-none d-md-flex align-items-center">
         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
         <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
@@ -43,49 +43,53 @@
     </div>
   </section><!-- End Top Bar -->
 
-  <header id="header" class="header flex items-center">
+  <header id="header" class="header d-flex align-items-center">
 
-    <div class="w-full mx-auto px-40 flex items-center justify-between">
-      <a href="index.html" class="logo flex items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>Promethéus<span>.</span></h1>
+        <h1>Kojoni<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="web.html">Sites Web</a></li>
-          <li><a href="marketing.html">Marketing</a></li>
-          <li><a href="prestation.html">Prestations</a></li>
-          
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="index.html">Accueil</a></li>
+          <li class="dropdown"><a href="#"><span>Services</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+              <li><a href="web.html">Création de site</a></li>
+              <li class="dropdown"><a href="marketing.html"><span>Référencement</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
+                  <li><a href="marketing.html#seo">Optimisation SEO</a></li>
+                  <li><a href="marketing.html#ads">Google Ads</a></li>
+                  <li><a href="marketing.html#ads">Facebook Ads</a></li>
                 </ul>
               </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="marketing.html#copywritting">Copywritting</a></li>
+              <li><a href="marketing.html#social-net">Gestion des réseaux</a></li>
             </ul>
-          </li> -->
+          </li>
+          <!-- <li><a href="web.html">Sites Web</a></li> -->
+          <li><a href="prestation.html">Prestations</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </nav><!-- .navbar -->
+      <a href="#" class="btn btn-primary">Commencer</a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
     </div>
-  </header><!-- End Header -->
-  <!-- End Header -->
+
+    
+  </header>
   <!-- ======= Contact Section ======= -->
+  <a class="whatsapp" href="https://wa.me/+212745891913" target="_blank">  
+    <img className='rounded-xl' src="data:image/png;base64,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"
+     alt=""
+     width="64"
+     height="64"
+     />
+  </a>
   <section id="contact" class="contact formation">
     <div class="container mx-auto" data-aos="fade-up">
 
@@ -94,37 +98,37 @@
         <p>Contactez-nous pour votre devis gratuit</p>
       </div>
 
-      <div class="grid grid-cols-1 md:grid-cols-3 lg:gap-x-0 gap-y-4">
+      <div class="row gx-lg-0 gy-4">
 
-        <div class="col-span-1">
+        <div class="col-lg-4">
 
-          <div class="info-container flex flex-col items-center justify-center">
-            <div class="info-item flex">
-              <i class="bi bi-geo-alt shrink-0"></i>
+          <div class="info-container d-flex flex-column align-items-center justify-content-center">
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
               <div>
                 <h4>Location:</h4>
                 <p>Gueliz, Marrakech, 4000 Maroc</p>
               </div>
             </div><!-- End Info Item -->
 
-            <div class="info-item flex">
-              <i class="bi bi-envelope shrink-0"></i>
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
               <div>
                 <h4>Email:</h4>
                 <p>info@example.com</p>
               </div>
             </div><!-- End Info Item -->
 
-            <div class="info-item flex">
-              <i class="bi bi-phone shrink-0"></i>
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
               <div>
                 <h4>Telephone</h4>
-                <p>06 07 04 31 25</p>
+                <p>07 45 89 19 13</p>
               </div>
             </div><!-- End Info Item -->
 
-            <div class="info-item flex">
-              <i class="bi bi-clock shrink-0"></i>
+            <div class="info-item d-flex">
+              <i class="bi bi-clock flex-shrink-0"></i>
               <div>
                 <h4>Horaires d'ouverture:</h4>
                 <p>Mon-Sat: 11AM - 23PM</p>
@@ -134,18 +138,18 @@
 
         </div>
 
-        <div class="col-span-2">
+        <div class="col-lg-8">
           <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-            <div class="grid md:grid-cols-2 md:gap-6">
-              <div class="group">
-                <input type="text" name="name" class="bg-gray-50 border border-gray-300 text-green-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" id="name" placeholder="Votre Nom" required>
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Votre Nom" required>
               </div>
-              <div class="group mt-3 md:mt-0">
-                <input type="email" class="bg-gray-50 border border-gray-300 text-green-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="email" id="email" placeholder="Your Email" required>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
               </div>
             </div>
-            <div class="group mt-3">
-              <select class="bg-gray-50 border border-gray-300 text-green-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="subject" id="subject">
+            <div class="form-group mt-3">
+              <select class="form-control" name="subject" id="subject">
                 <option value="default">Choisir un sujet</option>
                 <option value="vitrine">Site Vitrine</option>
                 <option value="ecom">Site E-commerce</option>
@@ -155,7 +159,7 @@
               <!-- <input type="text" class="form-control" name="subject" id="subject" placeholder="Sujet" required> -->
             </div>
             <div class="form-group mt-3">
-              <textarea class="bg-gray-50 border border-gray-300 text-green-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" name="message" rows="7" placeholder="Message" required></textarea>
+              <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
             </div>
             <div class="my-3">
               <div class="loading">Loading</div>
@@ -171,17 +175,17 @@
     </div>
   </section><!-- End Contact Section -->
 
-  <!-- ======= Footer ======= -->
-<footer id="footer" class="footer">
+ <!-- ======= Footer ======= -->
+ <footer id="footer" class="footer">
 
-  <div class="container mx-auto">
-    <div class="grid gap-y-4">
+  <div class="container">
+    <div class="row gy-4">
       <div class="col-lg-5 col-md-12 footer-info">
-        <a href="index.html" class="logo flex items-center">
-          <span>Prometheus</span>
+        <a href="index.html" class="logo d-flex align-items-center">
+          <span>Kojoni</span>
         </a>
-        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-        <div class="social-links flex mt-4">
+        <p>C'une agence de communication digitale, Elle s'efforce tous les jours à s'innover afin de répondre au mieux à l'évolution constante du marché.</p>
+        <div class="social-links d-flex mt-4">
           <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
           <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
           <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
@@ -228,7 +232,7 @@
 
   <div class="container mt-4">
     <div class="copyright">
-      &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
+      &copy; Copyright <strong><span>Kojoni</span></strong>. All Rights Reserved
     </div>
     <div class="credits">
       Designed by <a href="https://www.instagram.com/el_fantasma_dasilva/">Val Pedro</a>
@@ -243,7 +247,7 @@
 <div id="preloader"></div>
 
 <!-- Vendor JS Files -->
-<!-- <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> -->
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="assets/vendor/aos/aos.js"></script>
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>

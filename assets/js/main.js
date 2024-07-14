@@ -127,6 +127,21 @@ document.addEventListener('DOMContentLoaded', () => {
   const glightbox = GLightbox({
     selector: '.glightbox'
   });
+  /**
+   * whatsapp button
+   */
+  const whatsapp = document.querySelector('.whatsapp');
+  if (whatsapp) {
+    const whatsappTop = function() {
+      window.scrollY > 100 ? whatsapp.classList.add('active') : whatsapp.classList.remove('active');
+    }
+    window.addEventListener('load', whatsappTop);
+    document.addEventListener('scroll', whatsappTop);
+    // whatsapp.addEventListener('click', window.scrollTo({
+    //   top: 0,
+    //   behavior: 'smooth'
+    // }));
+  }
 
   /**
    * Scroll top button
