@@ -11,14 +11,51 @@
 # Learn more about CSS variables at https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_custom_properties
 --------------------------------------------------------------*/
 /* Fonts */
+/* roboto-slab-500 - latin */
 @font-face {
-  font-family: sifonn;
-  src: url(sifonn.woff);
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  src: url('roboto-slab-v34-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  src: url('roboto-slab-v34-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  src: url('roboto-slab-v34-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-slab-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 800;
+  src: url('roboto-slab-v34-latin-800.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('open-sans.woff2') format('woff2');
 }
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-800: "Montserrat", sans-serif;
-  --font-secondary: "Poppins", sans-serif;
+  --font-default: "Open Sans";
+  --font-500: "Roboto Slab";
+  --font-600: "Roboto Slab";
+  --font-700: "Roboto Slab";
 }
 
 /* Colors */
@@ -36,6 +73,7 @@
   --color-900: #064e3a;
   --color-950: #022c20;
   --color-secondary: #f85a40;
+  --violet: #5661ae;
 }
 
 /* Smooth scroll behavior */
@@ -74,7 +112,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-800);
+  font-family: 'Roboto Slab';
 }
 
 /*--------------------------------------------------------------
@@ -181,7 +219,47 @@ section {
   color: var(--color-secondary);
   content: "/";
 }
+/*-------------------------------------------------------------
+# Button
+--------------------------------------------------------------*/
+.button {
+  border-radius: 50px;
+  background-color: var(--color-secondary);
+  border: none;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 15px;
+  padding: 14px 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 36px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 
+}
+
+.button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: 0;
+  transition: 0.5s;
+}
+
+.button:hover{
+  padding-right: 44px;
+  padding-left: 28px;
+  color: white;
+}
+
+.button:hover:after {
+  opacity: 1;
+  right: 10px;
+}
 /*--------------------------------------------------------------
 # Whatsapp top button
 --------------------------------------------------------------*/
@@ -190,9 +268,14 @@ section {
   visibility: hidden;
   opacity: 0;
   bottom: -70px;
-  right: 10px;
+  right: 15px;
   z-index: 9999;
   transition: all .3s;
+}
+
+.whatsapp img {
+  width: 48px;
+  height: 48px;
 }
 
 .whatsapp.active {
@@ -468,6 +551,7 @@ section {
 
   .navbar .dropdown ul a {
     padding: 10px 20px;
+    font-family: "Roboto Slab";
     font-size: 15px;
     text-transform: none;
     font-weight: 600;
@@ -554,7 +638,7 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 10px 20px;
-    font-family: var(--font-800);
+    font-family: 'Roboto Slab';
     font-size: 15px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.7);
@@ -2037,6 +2121,10 @@ section {
   transition: 0.3s;
 }
 
+.hero .icon-box .sub-title {
+  color: white;
+}
+
 .hero .icon-box .icon {
   margin-bottom: 20px;
   padding-top: 10px;
@@ -2052,7 +2140,8 @@ section {
 }
 
 .hero .icon-box:hover .title a,
-.hero .icon-box:hover .icon {
+.hero .icon-box:hover .icon, 
+.hero .icon-box:hover .sub-title{
   color: var(--color-text);
 }
 
