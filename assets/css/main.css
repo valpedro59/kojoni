@@ -224,13 +224,13 @@ section {
 --------------------------------------------------------------*/
 .button {
   border-radius: 50px;
-  background-color: var(--color-secondary);
-  border: none;
-  color: #fff;
+  background-color: transparent;
+  border: 2px solid var(--color-secondary);
+  color: white;
   text-align: center;
   letter-spacing: 1px;
   font-size: 15px;
-  padding: 14px 40px;
+  padding: 14px 28px;
   transition: all 0.5s;
   cursor: pointer;
   margin: 36px;
@@ -238,6 +238,7 @@ section {
   display: inline-block;
   position: relative;
   transition: 0.5s;
+  font-weight: 500;
 
 }
 
@@ -251,9 +252,11 @@ section {
 }
 
 .button:hover{
-  padding-right: 44px;
+  padding-right: 28px;
   padding-left: 28px;
   color: white;
+  background-color: var(--color-secondary);
+  border: none;
 }
 
 .button:hover:after {
